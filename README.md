@@ -6,7 +6,7 @@ Echo service is a microservice app that listens to HTTP traffic on POST and GET 
 
 1. Download or Clone this repository to your machine.
 
-2. Open command prompt and navigate to the EchoServer folder
+2. Open command prompt and navigate to the Echoservice folder
 
 3. Login to Cloud Foundry. Use you respective API end point
 
