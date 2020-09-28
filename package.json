@@ -1,0 +1,15 @@
+{
+	"name": "echoservice",
+	"version": "1.0.0",
+	"description": "A Simple Node App to Echo the Inbound TCP traffic as response",
+	"main": "echoserver.js",
+	"scripts": {
+		"start": "node echoservice.js"
+	},
+	"author": "Santhosh Vellingiri",
+	"url": "https://www.linkedin.com/in/santhoshkumarvellingiri/",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1"
+	}
+}

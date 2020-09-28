@@ -1,0 +1,6 @@
+applications:
+  - name: echoservice
+    routes:
+      - route: >-
+          echoservice.cfapps.eu10.hana.ondemand.com
+    memory: 128M
