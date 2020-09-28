@@ -1,5 +1,6 @@
 # compiled output
 /node_modules
+/Echoservice/node_modules
 
 # IDE - VSCode
 .vscode/*
