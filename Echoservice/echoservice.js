@@ -2,7 +2,6 @@ var express = require('express');
 var http = require('http');
 var bodyParser = require('body-parser');
 const { Console } = require('console');
-const url = require('url');
 
 var app = express();
 const port = process.env.PORT || 3000;
@@ -14,7 +13,6 @@ app.use(bodyParser.text({
 }));
 
 app.post('/*', function (req, res) {
-  //var q = url.parse(req.url, true);
   var resObj = new Object();
   resObj.uri = req.url;
   resObj.method = 'POST';
@@ -24,16 +22,14 @@ app.post('/*', function (req, res) {
   resObj.data = req.body;
   res = res.status(200);
   res = res.type('application/json');
-  //console.log("Request Path : " + q.path);
   var resStr = JSON.stringify(resObj);
-  console.log("**** START ****");
+  console.log("**** Echoservice Log START ****");
   console.log(resStr);
-  console.log("**** END ****");
+  console.log("**** Echoservice Log END ****");
   res.send(resStr);
 });
 
 app.get('/*', function (req, res) {
-  //var q = url.parse(req.url, true);
   var resObj = new Object();
   resObj.uri = req.url;
   resObj.method = 'GET';
@@ -43,11 +39,10 @@ app.get('/*', function (req, res) {
   resObj.data = req.body;
   res = res.status(200);
   res = res.type('application/json');
-  //console.log("Request Path : " + q.path);
   var resStr = JSON.stringify(resObj);
-  console.log("**** START ****");
+  console.log("**** Echoservice Log START ****");
   console.log(resStr);
-  console.log("**** END ****");
+  console.log("**** Echoservice Log END ****");
   res.send(resStr);
 });
 
