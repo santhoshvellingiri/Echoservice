@@ -1,6 +1,6 @@
 # Echo Service
 
-Echo service is a microservice app that listens to HTTP traffic on POST and GET Verb and response the inbound traffic without processing or saving
+Echo service is a micro service app that listens to HTTP traffic on POST and GET Verb and respond the inbound traffic without processing or saving
 
 ## Deploying it to SAP Cloud Foundry
 
@@ -17,10 +17,13 @@ cf login -a https://api.cf.eu10.hana.ondemand.com
 ```bash
 cf push
 ```
-5. Upon successful completion, verify the deployment by list the apps.
+5. Upon successful completion, verify the deployment by listing the apps.
 ```bash
 cf apps
 ```
+
+## More Information
+[SAP CPI – HTTP Tracing using Own Echo Service](https://blogs.sap.com/2020/09/29/sap-cpi-http-tracing-using-an-echo-service/)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
